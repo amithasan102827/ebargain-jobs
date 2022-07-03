@@ -138,8 +138,9 @@ select:focus {
   }
   .dropdown-container {
     width: 45vw;
-
+   height: auto;
     color: blue;
+    font-size: 14px;
   }
 
   .hero-text-input {
@@ -151,10 +152,12 @@ select:focus {
     border-radius: 6px;
     background-color: #ea595c;
     font-weight: 600;
-    text-align: center !important;
-    font-size: 14px !important;
+    text-align: end !important;
+    font-size: 14px !important;  
+  }
 
-    
+  .search-location{
+    height: 20% !important;
   }
 
   .mui-icon {
@@ -177,7 +180,7 @@ select:focus {
     overflow: scroll;
     color: white;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 10px;
   }
 }
 

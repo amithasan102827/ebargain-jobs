@@ -91,13 +91,13 @@ const Banner = () => {
                 
                  
                   <div className="dropdown-container">
-                    <Select className=""
+                    <Select className="search-location"
                       options={optionList}
                       placeholder="Select location"
                       value={selectedOptions}
                       onChange={handleSelect}
                       isSearchable={true}
-                      isMulti
+                      // isMulti
                     />
                   </div>
              

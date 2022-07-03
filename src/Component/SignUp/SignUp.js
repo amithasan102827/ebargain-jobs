@@ -19,22 +19,22 @@ const SignUp = () => {
             <div className=''>
                 <h1 className='text-success mt-5 mb-5 create-account-text '>Create Account</h1>
             </div>
-            <div className='mb-5'>
-                <button type="button" class="btn btn-outline-danger me-4 singUp-button"><FcGoogle style={{ fontSize: '25px', marginRight: '10px' }} />Sign up with Google</button>
+            <div className='mb-5 button-container'>
+                <button type="button" class="btn btn-outline-danger me-4  singUp-button"><FcGoogle style={{ fontSize: '25px', marginRight: '10px' }} />Sign up with Google</button>
                 <button type="button" class="btn btn-outline-primary ms-4 singUp-button"><FaFacebookSquare style={{ fontSize: '25px', marginRight: '10px' }} />Sign up with Facebook</button>
             </div>
             <div className='mb-5 lh-lg ms-2'>
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <TextField sx={{width:'45%'}} {...register("name", { required: true })} id="standard-basic" label="Full Name" variant="standard" /> <br />
+                    <TextField className='text-field'  sx={{width:'45%'}} {...register("name", { required: true })} id="standard-basic" label="Full Name" variant="standard" /> <br />
                     <p className='text-danger '> {errors.name?.type === 'required' && "First name is required"}</p> <br />
             
-                    <TextField sx={{width:'45%'}} {...register("email", { required: true })} id="standard-basic" label="Email Address" variant="standard" /> <br />
+                    <TextField className='text-field' sx={{width:'45%'}} {...register("email", { required: true })} id="standard-basic" label="Email Address" variant="standard" /> <br />
                     {errors.email?.type === 'required' && "First name is required"} <br />
                     
                     
                     <div className='position-relative'>
                     {/* <i onClick={()=>console.log('show password')}><BsFillEyeFill  style={{position:'absolute',top:'25px',right:'370px',cursor:'pointer'}}/></i> */}
-                    <TextField  sx={{width:'45%',}} type="password" {...register("password", { required: true })} id="standard-basic" label="password" variant="standard" />  <br />
+                    <TextField className='text-field'  sx={{width:'45%',}} type="password" {...register("password", { required: true })} id="standard-basic" label="password" variant="standard" />  <br />
                     {errors.password?.type === 'required' && "First name is required"} <br />
                     </div>
                     
@@ -48,7 +48,7 @@ const SignUp = () => {
 
 
 
-                    <button className='py-1 mt-3' style={{ width: '45%', background: '#5EA373', color: 'white', border: 'none', fontWeight: 'bold' }} type="submit" >Create Account</button>
+                    <button className='py-1 mt-3 submit-btn' style={{ width: '45%', background: '#5EA373', color: 'white', border: 'none', fontWeight: 'bold' }} type="submit" >Create Account</button>
                     
                 </form>
 
