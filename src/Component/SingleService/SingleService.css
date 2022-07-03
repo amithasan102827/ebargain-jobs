@@ -1,0 +1,135 @@
+.hero-image-2 {
+  width: 100%;
+  height: 100%;
+  padding: 17.5%;
+  background-image: url('../../images/Rectangle\ 492.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 62px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.selece-location-service-page{
+  width: 40%;
+  margin-left: 135px;
+  text-align: start;
+}
+
+
+
+/* .singleservice-card:hover {
+  transition: 0.5s;
+}
+
+.singleservice-card:hover {
+  margin-top: -10px;
+  border: 2px solid rgb(45, 246, 253);
+  border-radius: 10px;
+} */
+
+
+.service-dropdown-menu {
+  max-height: 280px;
+  overflow-y: scroll;
+}
+
+.service-scrollable-menu {
+  height: auto;
+  max-height: 230px;
+  overflow-x: hidden;
+}
+
+.Filter-dropdown-toggle::after {
+  display: none !important;
+}
+
+@media (max-width:768px) {
+  .hero-image-2 {
+    /* min-height: 28vh;
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-position:center;
+       overflow: hidden; */
+    padding: 22%;
+    margin-top: 61px;
+  }
+
+
+  .service {
+    order: 1;
+    width: 100%;
+  }
+
+  .select {
+    order: 2;
+    width: 50%;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+  .selece-location-service-page{
+    width: 43vw;
+    margin: 0 ;
+   /* float: left; */
+   
+  }
+  
+  .dropdown-toggle {
+    /* border: none !important; */
+
+  }
+
+  .toggle-button {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .select-2 {
+    float: left !important;
+  }
+
+  .short-by {
+    order: 2;
+    width: 50% !important;
+    margin: auto;
+  }
+.filter{
+  /* margin-left: 20px; */
+}
+  /* .short-by-2 {
+    float: right !important;
+    margin: 0 !important;
+  } */
+
+  /* .short-by-3 {
+    float: left !important;
+    margin: 0 !important; 
+  } */
+
+  .card-section img {
+    width: 134px !important;
+    height: 134px !important;
+
+  }
+
+  .card-section {
+    height: 95% !important;
+    padding-top: 7px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .card-section-1 {
+    margin-top: 0 !important;
+  }
+
+
+}

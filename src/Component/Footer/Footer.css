@@ -1,0 +1,78 @@
+.footer{
+    background-color: #5EA373;
+    width: 100%;
+    height: 550px;
+    /* position: relative; */
+ 
+}
+
+.footer-section {
+/* position: absolute;
+top: 80px;
+left: 144px; */
+
+}
+
+
+.main-form{
+line-height: 40px;
+}
+.form-group{
+color: white;
+}
+
+.footer-icon a{
+color: white;
+margin-right: 40px;
+
+}
+.footer-icon a:hover{
+color: red;
+}
+.form-group, input, textarea{
+width: 80%;
+
+}
+.form-button{
+
+border-radius: 20px;
+background-color: rgb(14, 87, 14) !important;
+outline: none;
+border: none;
+font-weight: 800;
+}
+.form-button:hover{
+background-color: rgb(238, 30, 30) !important;
+}
+
+@media(max-width:768px){
+  
+    .form-group, input, textarea{
+        width: 100%;
+        }
+
+        .footer{
+            height: 100%;
+        }
+
+        .contact-section{
+          width: 100%;
+          /* padding-left: 35px; */
+          padding-top: 0 !important;
+          margin-top: 0 !important;
+          padding-bottom: 60px;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+         
+        }
+        .contact-section-1{
+            padding-top: 0 !important;
+            margin-top: 0 !important;
+            width: 100%;
+            margin: auto;
+            
+        }
+
+}
